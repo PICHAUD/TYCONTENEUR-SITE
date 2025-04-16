@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Valeurs - TyConteneur Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fefcfb;
+      color: #1f2e43;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px 20px 80px;
+      border-bottom: 3px solid #f1c643;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+    }
+
+    .logo-text .ty {
+      font-weight: 600;
+      color: #1f2e43;
+    }
+
+    .logo-text .conteneur {
+      color: #4bb4ae;
+      font-weight: 500;
+    }
+
+    .logo-text .concept {
+      color: #d8ae3c;
+      font-weight: 500;
+    }
+
+    nav a {
+      margin-left: 40px;
+      font-weight: 600;
+      color: #1f2e43;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      color: #1f2e43;
+      font-weight: 800;
+    }
+
+    .section {
+      padding: 60px 80px;
+    }
+
+    .value-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 80px;
+    }
+
+    .value-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .value-block img {
+      width: 48%;
+      border-radius: 5px;
+    }
+
+    .value-text {
+      width: 48%;
+    }
+
+    .value-text h2 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #1f2e43;
+      margin-bottom: 10px;
+    }
+
+    .value-text h3 {
+      font-size: 18px;
+      color: #4bb4ae;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .value-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1f2e43;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background-color: #d8ae3c;
+      color: white;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #c89f2c;
+    }
+
+    @media (max-width: 1024px) {
+      .value-block, .value-block.reverse {
+        flex-direction: column;
+      }
+
+      .value-block img, .value-text {
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Image/logo.png" alt="Logo TyConteneur">
+      <div class="logo-text">
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">QUI SOMMES NOUS ?</a>
+      <a href="services.html">NOS SERVICES</a>
+      <a href="valeurs.html" class="active">NOS VALEURS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="value-block">
+      <img src="Image/visuecoresp.png" alt="Container éco-responsable">
+      <div class="value-text">
+        <h2>Eco-responsabilité</h2>
+        <h3>Construire autrement, pour demain</h3>
+        <p>Chez TyConteneur, nous donnons une seconde vie à des conteneurs maritimes pour limiter les déchets et l’impact sur l’environnement. Notre production est locale, en Bretagne, avec une sélection rigoureuse des matériaux.</p>
+        <button class="btn">PLUS DE DETAILS</button>
+      </div>
+    </div>
+
+    <div class="value-block reverse">
+      <img src="Image/visumodularité.png" alt="Container modulaire">
+      <div class="value-text">
+        <h2>Modularité</h2>
+        <h3>Une liberté d’usage, sans limites</h3>
+        <p>Nos structures s’assemblent, se déplacent et évoluent facilement selon vos besoins. Vous pouvez agrandir, déplacer ou reconfigurer votre espace à tout moment.</p>
+        <button class="btn">PLUS DE DETAILS</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+

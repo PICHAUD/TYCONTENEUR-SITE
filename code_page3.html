@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Services - TyConteneur</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #FDFDFC;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 60px;
+      border-bottom: 2px solid #F0D472;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #1E2E4D;
+      font-weight: normal;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+
+    .main-title {
+      text-align: center;
+      margin-top: 40px;
+      color: #1E2E4D;
+    }
+
+    .main-title h1 {
+      font-size: 48px;
+      font-weight: 800;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .main-title p {
+      color: #029C99;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px 60px;
+    }
+
+    .card {
+      background-color: #C6E6E8;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .card img.card-img {
+      width: 100%;
+      border-radius: 6px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: #1E2E4D;
+    }
+
+    .card-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .card-icon img {
+      height: 28px;
+    }
+
+    .card-icon a {
+      background-color: #D2A822;
+      padding: 10px 15px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Image/logo.png" alt="Logo TyConteneur">
+    <nav>
+      <a href="index.html">ACCUEIL</a>
+      <a href="qui-sommes-nous.html">QUI SOMMES NOUS ?</a>
+      <a href="nos-services.html" class="active">NOS SERVICES</a>
+      <a href="#">NOS VALEURS</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="main-title">
+    <h1>ESPACES MODULAIRES</h1>
+    <p>TyConteneur conçoit et aménage des conteneurs en espaces de vie ou de travail sur-mesure.<br>
+    Chaque projet est unique et entièrement personnalisable.</p>
+  </section>
+
+  <section class="card-container">
+    <div class="card">
+      <img src="Image/visustudio.png" alt="Habitat modulaire" class="card-img">
+      <h3>Habitat modulaire</h3>
+      <div class="card-icon">
+        <img src="images/icon-house.png" alt="Maison">
+        <a href="#">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Image/Visushop.png" alt="Commerce mobile" class="card-img">
+      <h3>Commerces mobiles</h3>
+      <div class="card-icon">
+        <img src="images/icon-shop.png" alt="Shop">
+        <a href="#">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Image/Visuwork.png" alt="Bureaux" class="card-img">
+      <h3>Bureaux</h3>
+      <div class="card-icon">
+        <img src="images/icon-office.png" alt="Bureau">
+        <a href="#">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Image/Visuevent.png" alt="Evènements" class="card-img">
+      <h3>Evènements</h3>
+      <div class="card-icon">
+        <img src="images/icon-calendar.png" alt="Calendrier">
+        <a href="#">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

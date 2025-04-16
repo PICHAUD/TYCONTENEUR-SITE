@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qui sommes-nous - TyConteneur</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfcfb;
+      color: #1c2a41;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      border-bottom: 2px solid #e2c98b;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #1c2a41;
+    }
+
+    nav a.active {
+      font-weight: 900;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .main-container img {
+      width: 50%;
+      height: auto;
+      margin-right: 50px;
+    }
+
+    .main-container .text {
+      width: 40%;
+    }
+
+    .text h1 {
+      font-size: 30px;
+      font-weight: 900;
+      color: #1c2a41;
+    }
+
+    .text .highlight {
+      font-weight: 700;
+      color: #00a89d;
+    }
+
+    .text p {
+      margin-top: 15px;
+      line-height: 1.6em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: #d4af37;
+      color: #1c2a41;
+      font-weight: 900;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Image/logo.png" alt="Logo TyConteneur" height="60">
+    </div>
+    <nav>
+      <a href="index.html">ACCUEIL</a>
+      <a href="qui-sommes-nous.html" class="active">QUI SOMMES NOUS ?</a>
+      <a href="#">NOS SERVICES</a>
+      <a href="#">NOS VALEURS</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <img src="Image/visupresentation.png" alt="Soudeur TyConteneur">
+    <div class="text">
+      <h1>TY’CONTENEUR</h1>
+      <p class="highlight">
+        Née d’une passion pour l’innovation, l’écoconstruction et le design sur-mesure. Installés sur la côte nord bretonne, nous transformons des conteneurs maritimes en espaces uniques : logements, bars, bureaux, modules événementiels…
+      </p>
+      <p>
+        Nos modules sont pensés, conçus et fabriqués dans notre atelier local avec un engagement fort pour la durabilité. Chaque projet est personnalisé selon vos besoins, nous misons sur l’exellence artisanale, l’esthétique contemporaine et une approche éco-responsable.
+      </p>
+      <p>
+        Bienvenue dans l’univers TYCONTENEUR, modulaire, fonctionnel et unique
+      </p>
+      <a class="btn" href="#">DÉCOUVRIR PLUS</a>
+    </div>
+  </main>
+</body>
+</html>

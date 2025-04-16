@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - TyConteneur Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fefcfb;
+      color: #1f2e43;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px 20px 80px;
+      border-bottom: 3px solid #f1c643;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+    }
+
+    .logo-text .ty {
+      font-weight: 600;
+      color: #1f2e43;
+    }
+
+    .logo-text .conteneur {
+      color: #4bb4ae;
+      font-weight: 500;
+    }
+
+    .logo-text .concept {
+      color: #d8ae3c;
+      font-weight: 500;
+    }
+
+    nav a {
+      margin-left: 40px;
+      font-weight: 600;
+      color: #1f2e43;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      font-weight: 800;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 80px;
+    }
+
+    .contact-left {
+      width: 45%;
+    }
+
+    .contact-left h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .contact-left em {
+      display: block;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 25px;
+    }
+
+    .contact-left p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .contact-left strong {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .contact-left a {
+      color: #1f2e43;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons i {
+      font-size: 28px;
+      margin-right: 15px;
+      color: #1f2e43;
+    }
+
+    .social-icons span {
+      display: block;
+      margin-top: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .contact-right {
+      width: 50%;
+    }
+
+    .contact-right form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+      background-color: #048b91;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .contact-right textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    .contact-right input::placeholder,
+    .contact-right textarea::placeholder {
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .btn-submit {
+      align-self: flex-end;
+      background-color: #d8ae3c;
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover {
+      background-color: #c89f2c;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-section {
+        flex-direction: column;
+        padding: 40px;
+      }
+
+      .contact-left, .contact-right {
+        width: 100%;
+      }
+
+      .contact-right {
+        margin-top: 40px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Image/logo.png" alt="Logo TyConteneur">
+    </div>
+    <nav>
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">QUI SOMMES NOUS ?</a>
+      <a href="services.html">NOS SERVICES</a>
+      <a href="valeurs.html">NOS VALEURS</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <h1>Contact</h1>
+      <em>Basé en Bretagne - Fabrication local</em>
+      <p>Disponible pour discuter de votre projet sur-mesure.  
+      Besoin d’un devis ? D’un échange rapide ?  
+      Écrivez-nous ou appelez-nous, on vous répond rapidement !</p>
+      <strong>E-mail:</strong>
+      <a href="mailto:tyconteneur@outlook.com">tyconteneur@outlook.com</a>
+      <div class="social-icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <span>TYCONTENEURCONCEPT</span>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form action="#" method="post">
+        <input type="text" name="nom" placeholder="NOM" required>
+        <input type="email" name="email" placeholder="E-MAIL" required>
+        <input type="text" name="objet" placeholder="OBJET">
+        <textarea name="message" placeholder="MESSAGE" required></textarea>
+        <button type="submit" class="btn-submit">CONTACTEZ-NOUS !</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
